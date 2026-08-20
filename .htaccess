@@ -1,4 +1,6 @@
 
+RewriteOptions inherit
+
 # To prevent access to .env and other files
 <Files .*>
 # Apache 2.2
@@ -13,7 +15,6 @@ Require all denied
 </Files>
 
 <IfModule mod_alias.c>
-RedirectMatch 301 ^/$ https://dev-api.elizavel.com/public
 </IfModule>
 # php -- BEGIN cPanel-generated handler, do not edit
 # Set the “ea-php82” package as the default “PHP” programming language.
